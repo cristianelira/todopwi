@@ -1,5 +1,6 @@
 ## Descrição
 - Projeto desenvolvido como desafio técnico para a vaga de Desenvolvedor React Native.
+- Foi utilizado Typescript para a construção do app, afim de evitar erros, Styled Component para facilitar futuras alterações do tema e melhorar a leiturabilidade, também foi utilizado o conceito de componentização, para poder reaproveitar itens e incrementar/alterar/remover se necessario.
 
 <br/>
 

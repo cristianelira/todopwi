@@ -65,6 +65,5 @@ Para abrir esse aquivo, navegue e abra o arquivo em coverage/lcov-report/index.h
 ## Aplicação pronta:
 
 <div align="center">
-  <image src="https://github.com/user-attachments/assets/38d4cd16-4f9a-4274-ab53-3d54905274e1" />
+  <image src="https://github.com/user-attachments/assets/0e4a2524-0b5a-4c25-8375-fb314956014d" />
 </div>
-

@@ -45,7 +45,6 @@ Para iniciar o projeto em modo desenvolvimento, basta abrir um terminal na raiz 
 ```shell
 yarn ios
 ```
-<br/>
 
 ## Testes
 

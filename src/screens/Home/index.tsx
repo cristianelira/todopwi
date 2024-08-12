@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Container, Tasks, Bottom } from './styles'
+import { Container, Tasks } from './styles'
 import { Header } from '../../components/Header'
 import { TodoInput } from '../../components/Input'
 import { Task, TaskList } from '../../components/TaskList'
@@ -91,7 +91,6 @@ export function Home() {
               removeTask={handleTaskRemove}
             />
           </Tasks>
-          <Bottom></Bottom>
         </KeyboardAwareScrollView>
       </Container>
     </TouchableWithoutFeedback>

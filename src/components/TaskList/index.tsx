@@ -34,6 +34,7 @@ export function TaskList({
       keyExtractor={item => String(item.id)}
       contentContainerStyle={{ marginBottom: RFValue(50), flexGrow: 1 }}
       showsVerticalScrollIndicator={false}
+      scrollEnabled={false}
       renderItem={({ item }) => {
         return (
           <TaskItem

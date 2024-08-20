@@ -21,6 +21,7 @@
     "react-native-keyboard-spacer-view": "^0.0.3",
     "react-native-responsive-fontsize": "^0.5.1",
     "react-native-svg": "15.2.0",
+    "react-native-toast-message": "^2.2.0",
     "react-native-vector-icons": "^10.1.0",
     "styled-components": "^6.1.12"
   },

@@ -5,6 +5,7 @@ import { TodoInput } from '../../components/Input'
 import { Task, TaskList } from '../../components/TaskList'
 import { Alert, Keyboard, TouchableWithoutFeedback } from 'react-native'
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
+import Toast from 'react-native-toast-message'
 
 export function Home() {
   const [tasks, setTasks] = useState<Task[]>([])
@@ -22,10 +23,10 @@ export function Home() {
     if (!checkTask) {
       setTasks(oldState => [...oldState, data])
     } else {
-      Alert.alert(
-        'Duplicado!',
-        'Você não pode cadastrar uma tarefa com o mesmo nome!'
-      )
+      Toast.show({
+        type: 'error',
+        text1: 'Já existe uma tarefa com esse nome❗'
+      })
     }
   }
 
@@ -46,9 +47,15 @@ export function Home() {
     )
 
     if (newTaskTitle === '') {
-      Alert.alert('Vazio...', 'A tarefa não pode estar vazia! ')
+      Toast.show({
+        type: 'error',
+        text1: 'A tarefa não pode estar vazia! 🚫'
+      })
     } else if (!!checkTask) {
-      Alert.alert('Duplicado!', 'Já existe uma tarefa com esse nome!')
+      Toast.show({
+        type: 'error',
+        text1: 'Já existe uma tarefa com esse nome! 🚫'
+      })
     } else {
       setTasks(prevState =>
         prevState.map(task => {
@@ -58,6 +65,10 @@ export function Home() {
           return task
         })
       )
+      Toast.show({
+        type: 'success',
+        text1: 'Tarefa atualizada com sucesso! ✅'
+      })
     }
   }
 

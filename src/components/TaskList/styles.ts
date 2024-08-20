@@ -2,9 +2,7 @@ import styled from 'styled-components/native'
 import Feather from '@expo/vector-icons/Feather'
 import { RFValue } from 'react-native-responsive-fontsize'
 
-export const Container = styled.FlatList.attrs({})`
-  margin-bottom: 50px;
-`
+export const Container = styled.FlatList.attrs({})``
 
 export const EmptyContainer = styled.View`
   margin-top: 2px;
